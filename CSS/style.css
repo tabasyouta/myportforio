@@ -1,0 +1,40 @@
+*{
+    list-style: none;
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.top-container{
+    text-align: center;
+    padding-top: 3px;
+    position: absolute;
+    top: 0;
+}
+
+.top-nav{
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin: 0 2px;
+}
+
+.top-item{
+    width: 30%;
+    height: 30px;
+    float: right;
+    display: none;
+    border: solid 1px grey;
+    vertical-align: middle;
+    background-color:skyblue;
+}
+
+.main-container{
+    margin-top: 32px;
+}
