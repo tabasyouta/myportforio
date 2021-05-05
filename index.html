@@ -7,27 +7,27 @@
 </head>
 <body>
     <!--ヘッダー-->
-    <header class="top-container clearfix">
-        <div id="js-nav" class="top-nav"><img src="img/top-nav.png"></div>
-        <div id="js-tab" class="top-contents">
-            <div class="top-item" data-tab="0">top-tab1</div>
-            <div class="top-item" data-tab="1">top-tab2</div>
-            <div class="top-item" data-tab="2">top-tab3</div>
+    <header class="top" id="js-top">
+        <a href="" class="top-nav" id="js-nav"><img src="img/navigation_32x32.png"></a>
+        <div class="top-tab" id="js-tab">
+            <a href="" class="top-tab-item is-active" data-tab="0">top-tab1</a>
+            <a href="" class="top-tab-item" data-tab="1">top-tab2</a>
+            <a href="" class="top-tab-item" data-tab="2">top-tab3</a>
         </div>
     </header>
     <!--メインコンテンツ-->
-    <article class="main-container" id="main">
-        <section>main-contents1</section>
-        <section>main-contents2</section>
-        <section>main-contents3</section>
+    <article class="main" id="js-main">
+        <section class="main-contents" data-content="0">main-contents1</section>
+        <section class="main-contents" data-content="1">main-contents2</section>
+        <section class="main-contents" data-content="2">main-contents3</section>
     </article>
     <!--フッダー-->
-    <footer class="bottom-container" id="bottom">
-        <ul>
-            <li>bottom-tab1</li>
-            <li>bottom-tab2</li>
-            <li>bottom-tab3</li>
-        </ul>
+    <footer class="bottom" id="bottom">
+        <div>
+            <div>bottom-tab1</div>
+            <div>bottom-tab2</div>
+            <div>bottom-tab3</div>
+        </div>
     </footer>
     <script src="app/app.js"></script>
 </body>
