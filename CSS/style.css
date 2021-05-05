@@ -25,7 +25,7 @@
 
 .top-tab{
     margin-left: 40px;
-    display: none;
+    display: flex;
     text-align: center;
 }
 
@@ -40,6 +40,18 @@
     text-decoration: none;
 }
 
+.mask{
+    display: none;
+}
+
+.is-active{
+    background: radial-gradient(blue,skyblue);
+}
+
 .main{
     margin-top: 50px;
+}
+
+.main-contents{
+    display: none;
 }

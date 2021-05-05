@@ -17,8 +17,8 @@
     // クリックでタブを表示する
     $nav.addEventListener("click",((e) => {
         e.preventDefault();
-        $tab.style.display = "flex";
-    }))
+        $tab.classList.toggle("mask");
+    }));
 
     // クリックでクラスリセットとACTクラスを追加する
     const handleClick = (e) => {
@@ -32,20 +32,17 @@
             $content[index].style.display ="none";
             $tabItem[index].classList.remove("is-active");
             index++;
-            console.log($tabItem);
         };
 
-        $nav.querySelectorAll('[data-content="' + targetVar + '"]')[0].style.display = "block";
-        $tab[targetVar].classList.add("is-active");
-        console.log("$tab[targetVar].classList",$tab[targetVar].classList);
-
+        $main.querySelectorAll('[data-content="' + targetVar + '"]')[0].style.display = "block";
+        $tabItem[targetVar].classList.add("is-active");
     };
 
-        let index = 0;
-        while(index < $tabItem.length){
-            $tabItem[index].addEventListener("click", (e) => handleClick(e));
-            index++;
-        }
-    
 
+    let index = 0;
+    while(index < $tabItem.length){
+        $tabItem[index].addEventListener("click", (e) => handleClick(e));
+        index++;
+    }
+    
 })();

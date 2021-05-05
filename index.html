@@ -9,7 +9,7 @@
     <!--ヘッダー-->
     <header class="top" id="js-top">
         <a href="" class="top-nav" id="js-nav"><img src="img/navigation_32x32.png"></a>
-        <div class="top-tab" id="js-tab">
+        <div class="top-tab mask" id="js-tab">
             <a href="" class="top-tab-item is-active" data-tab="0">top-tab1</a>
             <a href="" class="top-tab-item" data-tab="1">top-tab2</a>
             <a href="" class="top-tab-item" data-tab="2">top-tab3</a>
@@ -17,7 +17,7 @@
     </header>
     <!--メインコンテンツ-->
     <article class="main" id="js-main">
-        <section class="main-contents" data-content="0">main-contents1</section>
+        <iframe src="iframeContents/iframe.html" class="main-contents" data-content="0">main-contents1</iframe>
         <section class="main-contents" data-content="1">main-contents2</section>
         <section class="main-contents" data-content="2">main-contents3</section>
     </article>
@@ -29,6 +29,6 @@
             <div>bottom-tab3</div>
         </div>
     </footer>
-    <script src="app/app.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
 </body>
 </html>
