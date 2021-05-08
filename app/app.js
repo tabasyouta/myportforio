@@ -1,12 +1,16 @@
 (()=>{
-    // 定数の定義
+    //定数の定義
     const $doc = document;
-   // const $top = $doc.getElementById("js-top");
+    //ナビゲーションバーの定数
     const $nav = $doc.getElementById("js-nav");
+     //トップとメインの定数
     const $tab = $doc.getElementById("js-tab");
     const $tabItem = $tab.querySelectorAll("[data-tab]");
     const $main = $doc.getElementById("js-main");
     const $content = $main.querySelectorAll("[data-content]");
+     //フッダーとフォームの定数
+    const $bottom = $doc.getElementById("js-bottom");
+    const $form = $doc.getElementById("js-form");
 
     //初期化
     const init = () => {
@@ -45,4 +49,9 @@
         index++;
     }
     
+    $bottom.addEventListener("click",((e) => {
+        e.preventDefault();
+        $form.classList.toggle("bottom-mask");
+    }));
+
 })();

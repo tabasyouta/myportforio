@@ -12,23 +12,30 @@
         <div class="top-tab mask" id="js-tab">
             <a href="" class="top-tab-item is-active" data-tab="0">Skills</a>
             <a href="" class="top-tab-item" data-tab="1">History</a>
-            <a href="" class="top-tab-item" data-tab="2">top-tab3</a>
+            <a href="" class="top-tab-item" data-tab="2">comment</a>
         </div>
     </header>
     <!--メインコンテンツ-->
     <article class="main" id="js-main">
         <iframe src="iframeContents/html/ifr1.html" class="main-contents" data-content="0">Skills</iframe>
         <iframe src="iframeContents/html/ifr2.html" class="main-contents" data-content="1">History</iframe>
-        <section class="main-contents" data-content="2">main-contents3</section>
+        <iframe src="iframeContents/html/ifr3.html" class="main-contents" data-content="2">comment</iframe>
     </article>
     <!--フッダー-->
-    <footer class="bottom" id="bottom">
+    <footer class="bottom">
         <div>
-            <form class="form-contents">
+            <form class="form-contents bottom-mask" id="js-form">
                 <p>NAME:<input type="text"></p>
+                <p>Gender:
+                    <input type="radio" name="gender" value="male">male
+                    <input type="radio" name="gender" value="female">female
+                </p>
+                <p>E-mail:<input type="email"></p>
+                <p><input type="submit" value="SEND">
+                   <input type="reset" value="RESET"></p>
             </form>
         </div>
-        <a href="" class="bottom-form">OPEN Form</a>
+        <a href="" class="bottom-form" id="js-bottom">OPEN Form</a>
     </footer>
     <script type="text/javascript" src="app/app.js"></script>
 </body>
